@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noUnusedLocals": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "rootDir": "./",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/a/*": ["./src/app/*"],
+      "@/c/*": ["./src/components/*"],
+      "@/h/*": ["./src/hooks/*"],
+      "@/l/*": ["./src/lib/*"],
+      "@/s/*": ["./src/styles/*"],
+      "@/u/*": ["./src/util/*"],
+      "#/*": ["./*"],
+      "!/*": ["./public/*"],
+      "$/*": ["./schemas/*"],
+      "react": ["node_modules/react"]
+    },
+    "outDir": "./out"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
