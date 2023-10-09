@@ -13,21 +13,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "noUnusedLocals": true,
-    "declaration": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "noImplicitThis": true,
-    "sourceMap": true,
-    "strictNullChecks": false,
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "rootDir": "./",
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@/a/*": ["./src/app/*"],
@@ -38,10 +28,8 @@
       "@/u/*": ["./src/util/*"],
       "#/*": ["./*"],
       "!/*": ["./public/*"],
-      "$/*": ["./schemas/*"],
-      "react": ["node_modules/react"]
+      "$/*": ["./schemas/*"]
     },
-    "outDir": "./out"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
